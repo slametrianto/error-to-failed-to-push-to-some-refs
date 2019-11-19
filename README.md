@@ -61,7 +61,10 @@ hint: 'git pull ...') before pushing again.>hint: See the 'Note about fast-forwa
  nah, mudah ni cara mengatasinya, cukup ikuti langkah berikut ini :
 
 Buat dulu Repository kalian
-Buka Git Bash kalian dan ketik perintah berikut $ git init
+Buka Git Bash kalian dan ketik perintah berikut   
+
+$ git init
+
 $ git add .
 
 $ git commit -m "First commit"
@@ -76,6 +79,8 @@ $ git pull origin master --allow-unrelated-histories
 
 Habis itu, baru deh kalian Push
 $ git push origin master
+
+melihat status update git,
 $ git push origin master -f
  
  
