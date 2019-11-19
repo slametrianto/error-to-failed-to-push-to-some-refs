@@ -45,3 +45,37 @@ RewriteRule ^(.*) http://domain2anda.com/$1 [P]
 <meta name="twitter:image" content="http://www.payunganakbangsa.com/img/pyng.jpg">
       
  </head>
+ 
+ 
+ 
+ 
+ ERROR
+ 
+ ! [rejected] master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/example/example.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.>hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ 
+ 
+ nah, mudah ni cara mengatasinya, cukup ikuti langkah berikut ini :
+
+Buat dulu Repository kalian
+Buka Git Bash kalian dan ketik perintah berikut $ git init
+$ git add .
+
+$ git commit -m "First commit"
+
+$ git remote add origin {remote repository URL}
+
+contoh git remote add origin https://github.com/example/example.git
+
+Solusinya ada di sini nih,
+
+$ git pull origin master --allow-unrelated-histories
+
+Habis itu, baru deh kalian Push
+$ git push origin master
+$ git push origin master -f
+ 
+ 
